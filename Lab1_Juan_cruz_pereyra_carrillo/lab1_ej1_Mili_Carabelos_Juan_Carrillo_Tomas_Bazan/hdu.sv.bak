@@ -1,0 +1,12 @@
+module hdu #(parameter N = 64)(
+    input [4:0] ID_EX_Rd,
+    input [31:0] instruction,
+    input mem_read,
+    output logic hazard_detected    // Indicates if any hazard is detected
+);
+
+    always_comb begin
+        hazard_detected = mem_read ? (instruction[9:5] == ID_EX_Rd) || (instruction[20:16] == ID_EX_Rd) : 0;
+    end
+
+endmodule

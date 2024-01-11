@@ -1,0 +1,9 @@
+Benchmark: simFisica || Nro de vias: 8 || Tamaño de cache: 32kB
+numCycles                                      2085484.0
+cpi                                            0.82
+branchPred.condPredicted                       335079.0
+branchPred.condIncorrect                       749.0
+dcache.overallHits::total                      243103.0
+dcache.ReadReq.hits::total                     181781.0
+idleCycles                                     1032.0
+miss rate                                      0,002230308     

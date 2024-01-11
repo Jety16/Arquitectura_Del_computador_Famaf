@@ -1,0 +1,29 @@
+Benchmark: simFisica || Nro de vias: 1 || Tamaño de cache: 32kB
+numCycles                                      4936954.0
+cpi                                            1.94
+dcache.overallHits::total                      159193.0
+dcache.ReadReq.hits::total                     145898.0
+idleCycles                                     1223591.0
+Lines modified successfully
+Benchmark: simFisica || Nro de vias: 2 || Tamaño de cache: 32kB
+numCycles                                      3688590.0
+cpi                                            1.45
+dcache.overallHits::total                      268560.0
+dcache.ReadReq.hits::total                     197166.0
+idleCycles                                     216901.0
+Lines modified successfully
+Benchmark: simFisica || Nro de vias: 4 || Tamaño de cache: 32kB
+numCycles                                      3688590.0
+cpi                                            1.45
+dcache.overallHits::total                      268496.0
+dcache.ReadReq.hits::total                     197102.0
+idleCycles                                     216837.0
+Lines modified successfully
+Benchmark: simFisica || Nro de vias: 8 || Tamaño de cache: 32kB
+numCycles                                      3688590.0
+cpi                                            1.45
+dcache.overallHits::total                      268464.0
+dcache.ReadReq.hits::total                     197070.0
+idleCycles                                     216805.0
+Lines modified successfully
+

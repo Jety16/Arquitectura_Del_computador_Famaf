@@ -1,0 +1,38 @@
+module fwdu (
+        input logic [4:0] EX_MEM_RegisterRd, MEM_WB_RegisterRd,
+        input logic [4:0] ID_EX_RegisterRn, ID_EX_RegisterRm,
+        input logic MEM_WB_RegWrite, EX_MEM_RegWrite,
+        output logic [1:0] ForwardA, ForwardB
+        );
+
+    always_comb begin
+
+        ForwardA <= 2'b00;
+        ForwardB <= 2'b00;
+
+        // EX Hazard ID_EX_RegisterRn
+        if (EX_MEM_RegWrite
+            && (EX_MEM_RegisterRd !== 'd31)
+            && (EX_MEM_RegisterRd === ID_EX_RegisterRn)) begin ForwardA <= 2'b10;
+            end
+
+        // MEM Hazard ID_EX_RegisterRn
+        else if (MEM_WB_RegWrite
+            && (MEM_WB_RegisterRd !== 'd31)
+            && (MEM_WB_RegisterRd === ID_EX_RegisterRn)) begin ForwardA <= 2'b01;
+            end
+
+        // EX Hazard ID_EX_RegisterRm
+        if (EX_MEM_RegWrite
+            && (EX_MEM_RegisterRd !== 'd31)
+            && (EX_MEM_RegisterRd === ID_EX_RegisterRm)) begin ForwardB <= 2'b10;
+            end
+
+        // MEM Hazard ID_EX_RegisterRm
+        else if (MEM_WB_RegWrite
+            && (MEM_WB_RegisterRd !== 'd31)
+            && (MEM_WB_RegisterRd === ID_EX_RegisterRm)) begin ForwardB <= 2'b01;
+            end
+    end
+
+endmodule

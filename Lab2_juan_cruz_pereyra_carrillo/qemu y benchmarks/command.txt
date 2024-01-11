@@ -1,0 +1,28 @@
+dashboard memory watch 0x00000000400801f0 32768
+b *0x40080078
+b *0x400801ac
+dashboard assembly
+dashboard breakpoints 
+dashboard expressions
+dashboard history
+dashboard source
+dashboard stack
+dashboard threads
+dashboard variables
+dashboard registers
+set logging file ../ejercicio2/gdbLog.txt
+set logging overwrite
+set logging on
+continue
+continue
+continue
+continue
+continue
+continue
+continue
+continue
+continue
+continue
+continue
+q
+y

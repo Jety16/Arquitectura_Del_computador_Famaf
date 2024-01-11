@@ -1,0 +1,21 @@
+Predictor Local
+Benchmark: simFisica || Nro de vias: 8 || Tamaño de cache: 32kB
+numCycles                                      3688590.0
+cpi                                            1.45
+branchPred.condPredicted                       336478.0
+branchPred.condIncorrect                       2051.0
+dcache.overallHits::total                      268464.0
+dcache.ReadReq.hits::total                     197070.0
+idleCycles                                     216805.0
+miss rate                                      0,006058565
+
+Predictor por Torneo
+Benchmark: simFisica || Nro de vias: 8 || Tamaño de cache: 32kB
+numCycles                                      3665099.0
+cpi                                            1.44
+branchPred.condPredicted                       333290.0
+branchPred.condIncorrect                       749.0
+dcache.overallHits::total                      276622.0
+dcache.ReadReq.hits::total                     197070.0
+idleCycles                                     217262.0
+miss rate                                      0,002242253

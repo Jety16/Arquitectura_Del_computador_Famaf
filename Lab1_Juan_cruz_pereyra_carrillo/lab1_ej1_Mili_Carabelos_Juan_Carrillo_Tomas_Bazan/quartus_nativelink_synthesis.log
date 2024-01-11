@@ -1,0 +1,10 @@
+Info: Using NativeLink to launch synthesis Tool
+Synthesis tool <None> is not supported by NativeLink
+Error: NativeLink flow failed to complete synthesis
+
+================The following information is provided to Debug NativeLink Script=================
+Nativelink TCL script failed with errorCode:  POSIX ENOENT {no such file or directory}
+Nativelink TCL script failed with errorInfo:  couldn't open "/home/juan-dev/intelFPGA_lite/20.1/quartus/linux64/tclIndex": no such file or directory
+    while executing
+"open [file join $dir tclIndex]"
+PATH Environment Variable is set to :  /home/juan-dev/intelFPGA_lite/20.1/quartus/adm:/home/juan-dev/intelFPGA_lite/20.1/quartus/linux64:/home/juan-dev/.pyenv/shims:/home/juan-dev/.pyenv/bin:/home/juan-dev/.local/bin:/home/juan-dev/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
